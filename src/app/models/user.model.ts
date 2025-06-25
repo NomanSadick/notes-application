@@ -8,7 +8,8 @@ const addressSchema = new Schema<IAddress>(
     street: { type: String },
     zip: { type: Number }
     
-  }
+  },
+  { _id: false } 
 )
 
 const userSchema = new Schema<IUser>(

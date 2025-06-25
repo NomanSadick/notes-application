@@ -17,6 +17,11 @@ const noteSchema = new Schema(
       label: { type: String, required: true },
       color: { type: String, default: "blue" },
     },
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    }
   },
   { versionKey: false, timestamps: true }
 );
